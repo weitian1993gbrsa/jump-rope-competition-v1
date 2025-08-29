@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:4000"); // replace with Render backend URL
+// Replace this with your actual Render server URL once deployed
+const socket = io("https://jump-rope-competition-v1.onrender.com");
 
 function App() {
   const [scores, setScores] = useState({});
