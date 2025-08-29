@@ -1,25 +1,12 @@
 # SkipTraq Jump Rope Web App
 
-A simple jump rope tracker with Scorekeeper and Scoreboard features.
+This repo contains 3 parts:
+- **server/**: Node.js backend with Socket.IO (deploy to Render)
+- **scorekeeper-client/**: Judges app (deploy to Netlify)
+- **scoreboard-client/**: Host/Audience display (deploy to Netlify)
 
-## How to Run
-
-### Backend (server)
-```bash
-cd server
-npm install
-npm start
-```
-
-### Frontend (client)
-```bash
-cd client
-npm install
-npm run dev
-```
-
-### Deploy
-- Deploy server on Render/Heroku/Vercel.
-- Deploy frontend on Netlify/Vercel.
-- Update `App.jsx` socket URL with deployed backend URL.
-```
+## Deployment
+1. Deploy `server/` on Render.
+2. Deploy `scorekeeper-client/` on Netlify.
+3. Deploy `scoreboard-client/` on Netlify.
+4. Update the socket URL in both frontends with your Render server URL.
