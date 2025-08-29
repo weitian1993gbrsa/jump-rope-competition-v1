@@ -28,5 +28,6 @@ io.on("connection", (socket) => {
   });
 });
 
+// ✅ Use Render's dynamic port, not a fixed one
 const PORT = process.env.PORT || 4000;
-httpServer.listen(PORT, () => console.log(`✅ Server running on ${PORT}`));
+httpServer.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
